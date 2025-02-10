@@ -1,0 +1,44 @@
+#billing_title,
+#abilitaBirthday,
+#abilitaBirthmonth,
+#abilitaBirthyear {
+    background-color: var(--wp--preset--color--white);
+    color: var(--medium-text-color);
+    border: 1px solid #ddd;
+}
+
+#abilitaBirthday,
+#abilitaBirthmonth {
+    padding: 6px;
+    margin-right: 4px;
+}
+
+.abilitaBirthday,
+.abilitaBirthmonth,
+.abilitaBirthyear {
+    width:32%;
+}
+
+#billing_title,
+#abilitaBirthyear {
+    padding: 6px;
+}
+
+.abilitaBirthdayLabel,
+.abilitaSepaAccountHolderLabel,
+.abilitaSepaIbanLabel,
+.abilitaSepaBicSwiftLabel {
+    font-weight: bold !important;
+}
+
+.abilitaPaymentIcon {
+    max-height:40px !important;
+}
+
+.abilitaLegalLegitimacyTitle, abilitaLegalLegitimacyTitle {
+    font-weight: bold !important;
+}
+
+.abilitaLegalLegitimacy, abilitaLegalLegitimacy {
+    font-weight: normal !Important;
+}

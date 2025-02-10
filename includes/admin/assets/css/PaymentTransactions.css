@@ -1,0 +1,121 @@
+th {
+    font-weight: bold !important;
+}
+
+.paymentAction {
+    width:90%;
+}
+
+span.green {
+    background-color: green !important;
+    color: white !important;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+span.red {
+    background-color: red !important;
+    color: white !important;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+span.orange {
+    background-color: orange !important;
+    color: white !important;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+tr>td {
+    line-height: 30px;
+}
+
+dialog::backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#modalRefund, #modalCancel, #modalReauthorize {
+    padding: 0px;
+    border: 10px solid silver;
+    width: 400px;
+    height: 320px;
+    overflow: hidden;
+}
+
+#modalRefund {
+    height: 490px;
+}
+
+#modalReauthorize {
+    height: 370px;
+}
+
+.modalHeader, .modalHeaderError, .modalHeaderSuccess {
+    background: whitesmoke !important;
+    margin: 0px !important;
+    padding: 10px !important;
+    font-size: 18px !important;
+}
+
+.modalHeaderSuccess {
+    background: green !important;
+    position: absolute !important;
+    top: 0px !important;
+    font-size: 12px !important;
+    width: 100% !important;
+    color: white !important;
+}
+
+.modalHeaderError {
+    background: red !important;
+    position: absolute !important;
+    top: 0px !important;
+    font-size: 12px !important;
+    width: 100% !important;
+    color: white !important;
+}
+
+.modalContent {
+    padding: 20px !important;
+}
+
+.modalInfo {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.modalLabel {
+    width: 110px;
+    display: inline-block;
+}
+
+.modalButtonSubmit {
+    background-color:green !important;
+    border:1px solid green !important;
+    color:white !important;
+}
+
+.modalButtonCancel {
+    background-color:red !important;
+    border:1px solid red !important;
+    color:white !important;
+}
+
+.modalFooter {
+    text-align: center;
+    position: absolute;
+    bottom: 0%;
+    background: whitesmoke;
+    width: 96%;
+    padding: 10px;
+    left: 0px;
+}
