@@ -1,17 +1,23 @@
 
 # Installations- und Konfigurationsanleitung
 
-**<span style="color:#D4161B">abilita PAY</span> für WooCommerce**
+**abilita PAY** für WooCommerce
 
-In diesem Dokument wird die Installation und Konfiguration des WooCommerce-Plugins <span style="color:#D4161B">abilita PAY</span> Schritt für Schritt erläutert. Das Plugin ermöglicht eine nahtlose Integration verschiedener Zahlungsoptionen in Ihren WooCommerce-Shop und bietet eine benutzerfreundliche Verwaltung von Transaktionen.
+In diesem Dokument wird die Installation und Konfiguration des WooCommerce-Plugins **abilita PAY** Schritt für Schritt erläutert. Das Plugin ermöglicht eine nahtlose Integration verschiedener Zahlungsoptionen in Ihren WooCommerce-Shop und bietet eine benutzerfreundliche Verwaltung von Transaktionen.
 
-**1 Vorbereitung**
+**1. Download des Plugin über Github**
+
+Bitte laden Sie das Plugin gemäß der Abbildung als ZIP-Datei herunter.
+
+  ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXewajiKiODAYdPenH6i6-cHeJEWvFjIVEl8iAklmTHokq-P2AsjCvs1PrAwEuusEevIR5nid3TR9Y0N2nWqcOsIwZYR0O8gl1BuNQE7-X2ec4q0n2C3vrS7k8ANSmYJ_LSmc157DA?key=4fk3tE37GsxpCQMMeQ0cKttO)
+
+**2 Vorbereitung**
 
 - Um das Plugin zu installieren, benötigen Sie die Berechtigung, neue Plugins in WordPress hinzuzufügen. Diese Berechtigung ist standardmäßig für Administratoren verfügbar.
 
 - Melden Sie sich im Admin-Bereich Ihrer WordPress-Installation an.
 
-**2 Plugin-Zip hochladen**
+**3 Plugin-Zip hochladen**
 
 - **Installationsseite aufrufen**
 
@@ -37,7 +43,7 @@ In diesem Dokument wird die Installation und Konfiguration des WooCommerce-Plugi
 
   Nach erfolgreicher Aktivierung erscheint der Menüpunkt **_abilita PAY_** in der linken Toolbar des WordPress-Dashboards.
 
-**3 Plugin-Einstellungen**
+**4 Plugin-Einstellungen**
 
 - Navigieren Sie in der Admin-Navigation zum Menüpunkt **_abilita PAY_**.
 
@@ -50,7 +56,7 @@ In diesem Dokument wird die Installation und Konfiguration des WooCommerce-Plugi
 
   Diese werden in den nächsten Punkten Schritt für Schritt erläutert.
 
-**3.1 Plugin-Einstellungen / Transaktionen**
+**4.1 Plugin-Einstellungen / Transaktionen**
 
 - Auf dieser Seite werden alle Transaktionen der verschiedenen Zahlungsarten angezeigt, die in Ihrem Shop durchgeführt wurden.
 
@@ -60,7 +66,7 @@ In diesem Dokument wird die Installation und Konfiguration des WooCommerce-Plugi
 
 - Zusätzlich steht eine Suchfunktion zur Verfügung, mit der Sie gezielt nach bestimmten Bestellungen suchen können.
 
-**3.2 Plugin-Einstellungen / Bezahlstatus**
+**4.2 Plugin-Einstellungen / Bezahlstatus**
 
 - Auf dieser Seite werden Ihre WooCommerce-Statuswerte den entsprechenden abilita-Statuswerten zugeordnet.
 
@@ -72,7 +78,7 @@ In diesem Dokument wird die Installation und Konfiguration des WooCommerce-Plugi
 
 WooCommerce verfügt leider über keinen differenzierteren Zahlungsstatus wie “Zahlung abgeschlossen”.
 
-**3.3 Plugin-Einstellungen / API-Zugangsdaten**
+**4.3 Plugin-Einstellungen / API-Zugangsdaten**
 
 - Geben Sie an dieser Stelle bitte Ihre API-Zugangsdaten ein, um Ihren Shop mit dem abilita Payment Gateway zu verbinden. An welcher Stelle Sie diese finden, erklären wir Ihnen im Nachfolgenden.
 
@@ -106,7 +112,7 @@ WooCommerce verfügt leider über keinen differenzierteren Zahlungsstatus wie �
 
 * Speichern Sie Ihre Eingaben, indem Sie auf **_Änderungen speichern_** klicken.
 
-**3.4 Plugin-Einstellungen / Checkliste**
+**4.4 Plugin-Einstellungen / Checkliste**
 
 - _Aktivierung Zahlungsarten_
 
@@ -146,7 +152,7 @@ WooCommerce verfügt leider über keinen differenzierteren Zahlungsstatus wie �
 
   ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeVlIbWkO8C3eIwdcoLtmzcE1Cu9Xj6AXrB0kkh7QuhGGtQiyU8CuBCrmfmCM9vekv87MLH3h3EdS7jaR9rHIFTZdfvf_-qU3cy2kC40W5YRCoXySlZ_xsrG4bUmH1eOWWxn4aU0Q?key=4fk3tE37GsxpCQMMeQ0cKttO)
 
-**3.5 Plugin-Einstellungen / Sonstiges**
+**4.5 Plugin-Einstellungen / Sonstiges**
 
 - _Checkout-Formularfeld (Anrede)_
 
@@ -186,7 +192,7 @@ WooCommerce verfügt leider über keinen differenzierteren Zahlungsstatus wie �
 
 Um Ihre Einstellungen in den Plugin-Einstellungen / Sonstiges zu übernehmen, klicken Sie bitte auf **_Änderung speichern_**.
 
-**4 Zahlungsarten aktivieren und konfigurieren**
+**5 Zahlungsarten aktivieren und konfigurieren**
 
 - Um die von Ihnen über den abilita PAY Vertrag gebuchten Zahlungsarten zu aktivieren und zu konfigurieren, navigieren Sie zu **_WooCommerce > Einstellungen_**.
 
