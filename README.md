@@ -2,7 +2,8 @@
 <h1 align="center" style="border-border:0">Installations- und Konfigurationsanleitung</h1>
 <h3 align="center">$\textsf{\color{#D4161B}{abilita PAY}}$ für WooCommerce</h3>
 <br><br>
-In diesem Dokument wird die Installation und Konfiguration des WooCommerce-Plugins **$\textsf{\color{#D4161B}{abilita PAY}}$** Schritt für Schritt erläutert. Das Plugin ermöglicht eine nahtlose Integration verschiedener Zahlungsoptionen in Ihren WooCommerce-Shop und bietet eine benutzerfreundliche Verwaltung von Transaktionen.
+
+In diesem Dokument wird die Installation und Konfiguration des WooCommerce-Plugins $\textsf{\color{#D4161B}{abilita PAY}}$ Schritt für Schritt erläutert. Das Plugin ermöglicht eine nahtlose Integration verschiedener Zahlungsoptionen in Ihren WooCommerce-Shop und bietet eine benutzerfreundliche Verwaltung von Transaktionen.
 <br><br>
 
 **1. Download des Plugin über Github**
