@@ -1,21 +1,23 @@
 
-# Installations- und Konfigurationsanleitung
-
-**abilita PAY** für WooCommerce
-
-In diesem Dokument wird die Installation und Konfiguration des WooCommerce-Plugins **abilita PAY** Schritt für Schritt erläutert. Das Plugin ermöglicht eine nahtlose Integration verschiedener Zahlungsoptionen in Ihren WooCommerce-Shop und bietet eine benutzerfreundliche Verwaltung von Transaktionen.
+<h1 align="center" style="border-border:0">Installations- und Konfigurationsanleitung</h1>
+<h3 align="center">$\textsf{\color{#D4161B}{abilita PAY}}$ für WooCommerce</h3>
+<br><br>
+In diesem Dokument wird die Installation und Konfiguration des WooCommerce-Plugins **$\textsf{\color{#D4161B}{abilita PAY}}$** Schritt für Schritt erläutert. Das Plugin ermöglicht eine nahtlose Integration verschiedener Zahlungsoptionen in Ihren WooCommerce-Shop und bietet eine benutzerfreundliche Verwaltung von Transaktionen.
+<br><br>
 
 **1. Download des Plugin über Github**
 
 Bitte laden Sie das Plugin gemäß der Abbildung als ZIP-Datei herunter.
 
   ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXewajiKiODAYdPenH6i6-cHeJEWvFjIVEl8iAklmTHokq-P2AsjCvs1PrAwEuusEevIR5nid3TR9Y0N2nWqcOsIwZYR0O8gl1BuNQE7-X2ec4q0n2C3vrS7k8ANSmYJ_LSmc157DA?key=4fk3tE37GsxpCQMMeQ0cKttO)
+<br><br>
 
 **2 Vorbereitung**
 
 - Um das Plugin zu installieren, benötigen Sie die Berechtigung, neue Plugins in WordPress hinzuzufügen. Diese Berechtigung ist standardmäßig für Administratoren verfügbar.
 
 - Melden Sie sich im Admin-Bereich Ihrer WordPress-Installation an.
+<br><br>
 
 **3 Plugin-Zip hochladen**
 
@@ -23,25 +25,22 @@ Bitte laden Sie das Plugin gemäß der Abbildung als ZIP-Datei herunter.
 
   Navigieren Sie im WordPress-Dashboard zu **_Plugins > Installieren_**, um die Seite für die Plugin-Installation zu öffnen.
 
-
 - **Plugin hochladen**
 
   Klicken Sie auf **_Plugin hochladen_**, um den Upload-Bereich zu öffnen.
-
 
 - **Datei auswählen**
 
   Wählen Sie die zuvor auf Ihre Festplatte heruntergeladene Plugin-ZIP-Datei vom Speicherort aus und klicken Sie anschließend auf **_Jetzt_** **_installieren_**.
 
-
 - **Plugin aktivieren**
 
   Nach erfolgreichem Upload werden Sie zur Bestätigungsseite weitergeleitet. Klicken Sie dort auf **_Plugin aktivieren_**, um das Plugin zu aktivieren.
 
-
 - **Erfolgreiche Installation**
 
   Nach erfolgreicher Aktivierung erscheint der Menüpunkt **_abilita PAY_** in der linken Toolbar des WordPress-Dashboards.
+<br><br>
 
 **4 Plugin-Einstellungen**
 
@@ -55,6 +54,7 @@ Bitte laden Sie das Plugin gemäß der Abbildung als ZIP-Datei herunter.
     - _Sonstiges_
 
   Diese werden in den nächsten Punkten Schritt für Schritt erläutert.
+<br><br>
 
 **4.1 Plugin-Einstellungen / Transaktionen**
 
@@ -65,6 +65,7 @@ Bitte laden Sie das Plugin gemäß der Abbildung als ZIP-Datei herunter.
 - Sie können Transaktionen nach Zahlungsart und Zahlungsstatus filtern.
 
 - Zusätzlich steht eine Suchfunktion zur Verfügung, mit der Sie gezielt nach bestimmten Bestellungen suchen können.
+<br><br>
 
 **4.2 Plugin-Einstellungen / Bezahlstatus**
 
@@ -74,9 +75,10 @@ Bitte laden Sie das Plugin gemäß der Abbildung als ZIP-Datei herunter.
 
   Ändern Sie diese Zuordnung daher nur unter vorheriger Absprache mit abilita.
 
-- Achten Sie besonders darauf, dass der abilita-Status “completed” nicht dem WooCommerce-Status “Abgeschlossen” zugewiesen werden darf, da dieser in WooCommerce bedeutet, dass die Bestellung vollständig abgewickelt wurde.
+- Achten Sie besonders darauf, dass der abilita-Status “**_completed_**” nicht dem WooCommerce-Status “**_Abgeschlossen_**” zugewiesen werden darf, da dieser in WooCommerce bedeutet, dass die Bestellung vollständig abgewickelt wurde.
 
-WooCommerce verfügt leider über keinen differenzierteren Zahlungsstatus wie “Zahlung abgeschlossen”.
+WooCommerce verfügt leider über keinen differenzierteren Zahlungsstatus wie “**_Zahlung abgeschlossen_**”.
+<br><br>
 
 **4.3 Plugin-Einstellungen / API-Zugangsdaten**
 
@@ -100,9 +102,8 @@ WooCommerce verfügt leider über keinen differenzierteren Zahlungsstatus wie �
 
 - Dort finden Sie die benötigten API-Zugangsdaten:
 
-  ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdhc_IPX7R_wEVGV943C5cOG5AVh08gDm4M8Vc8WUMt92ICfGiSfpV-tSu5g4wfKgPyDzgQAZpoSlt58Jmm9gtFinp8TtbFAzc9sAEpFV8-MZA7RTmlraho3Qylc5At-HnW_1KTdQ?key=4fk3tE37GsxpCQMMeQ0cKttO)
-
-	_(Der Incoming Key wird für WooCommerce-Shopsysteme nicht benötigt)_
+  ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdhc_IPX7R_wEVGV943C5cOG5AVh08gDm4M8Vc8WUMt92ICfGiSfpV-tSu5g4wfKgPyDzgQAZpoSlt58Jmm9gtFinp8TtbFAzc9sAEpFV8-MZA7RTmlraho3Qylc5At-HnW_1KTdQ?key=4fk3tE37GsxpCQMMeQ0cKttO)<br>
+  _(Der Incoming Key wird für WooCommerce-Shopsysteme nicht benötigt)_
 
 - Übernehmen Sie diese nun in Ihren WooCommerce-Shop:
 
@@ -111,6 +112,7 @@ WooCommerce verfügt leider über keinen differenzierteren Zahlungsstatus wie �
 - <span style="color:#D4161B">Bitte achten Sie unbedingt darauf, dass Sie nicht die Daten aus der Testumgebung des abilita Payment Gateways in die Produktionsumgebung Ihres WooCommerce-Shops übernehmen oder andersherum.</span>
 
 * Speichern Sie Ihre Eingaben, indem Sie auf **_Änderungen speichern_** klicken.
+<br><br>
 
 **4.4 Plugin-Einstellungen / Checkliste**
 
@@ -127,8 +129,6 @@ WooCommerce verfügt leider über keinen differenzierteren Zahlungsstatus wie �
   WooCommerce hat in seinen Standard-Einstellungen 60 Minuten für die Reservierungen von Waren einer Bestellung hinterlegt. Dies bedeutet, dass wenn ein Kunde mit den Zahlungsarten: Vorkasse, Rechnung oder SEPA-Lastschrift eine Bestellung durchführt, reserviert WooCommerce die bestellten Produkte lediglich für 60 Minuten. Nach 60 Minuten würde eine Bestellung automatisch von WooCommerce storniert und der Bestand aufgewertet.
 
   Da bei den Zahlungsarten Vorkasse, Rechnung oder SEPA-Lastschrift der Zahlungseingang einige Tage dauern kann, sollten Sie den hinterlegten Wert komplett entfernen und die Änderung speichern.
-
-
 
 	Navigieren Sie hierzu in Ihre Lagerbestand-Einstellungen in Ihrem Shopsystem und löschen Sie den dort evtl. vorhandenen Wert:  
   
@@ -151,6 +151,7 @@ WooCommerce verfügt leider über keinen differenzierteren Zahlungsstatus wie �
   Bitte deaktivieren Sie diese Option.
 
   ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeVlIbWkO8C3eIwdcoLtmzcE1Cu9Xj6AXrB0kkh7QuhGGtQiyU8CuBCrmfmCM9vekv87MLH3h3EdS7jaR9rHIFTZdfvf_-qU3cy2kC40W5YRCoXySlZ_xsrG4bUmH1eOWWxn4aU0Q?key=4fk3tE37GsxpCQMMeQ0cKttO)
+<br><br>
 
 **4.5 Plugin-Einstellungen / Sonstiges**
 
@@ -191,6 +192,7 @@ WooCommerce verfügt leider über keinen differenzierteren Zahlungsstatus wie �
     - Alle Eingabefelder für das Geburtsdatum verfügen über eigene CSS-Klassen.
 
 Um Ihre Einstellungen in den Plugin-Einstellungen / Sonstiges zu übernehmen, klicken Sie bitte auf **_Änderung speichern_**.
+<br><br>
 
 **5 Zahlungsarten aktivieren und konfigurieren**
 
