@@ -1,7 +1,7 @@
 
-<center># Installations- und Konfigurationsanleitung</center>
-<br>
-<center>**<span style="color:#D4161B">abilita PAY</span> für WooCommerce**</center>
+# Installations- und Konfigurationsanleitung
+
+**<span style="color:#D4161B">abilita PAY</span> für WooCommerce**
 
 In diesem Dokument wird die Installation und Konfiguration des WooCommerce-Plugins <span style="color:#D4161B">abilita PAY</span> Schritt für Schritt erläutert. Das Plugin ermöglicht eine nahtlose Integration verschiedener Zahlungsoptionen in Ihren WooCommerce-Shop und bietet eine benutzerfreundliche Verwaltung von Transaktionen.
 
@@ -96,7 +96,7 @@ WooCommerce verfügt leider über keinen differenzierteren Zahlungsstatus wie �
 
   ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdhc_IPX7R_wEVGV943C5cOG5AVh08gDm4M8Vc8WUMt92ICfGiSfpV-tSu5g4wfKgPyDzgQAZpoSlt58Jmm9gtFinp8TtbFAzc9sAEpFV8-MZA7RTmlraho3Qylc5At-HnW_1KTdQ?key=4fk3tE37GsxpCQMMeQ0cKttO)
 
-_(Der Incoming Key wird für WooCommerce-Shopsysteme nicht benötigt)_
+	_(Der Incoming Key wird für WooCommerce-Shopsysteme nicht benötigt)_
 
 - Übernehmen Sie diese nun in Ihren WooCommerce-Shop:
 
