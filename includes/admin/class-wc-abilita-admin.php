@@ -212,89 +212,9 @@ class WC_Abilita_Abilita_Admin {
             <h1 class="wp-heading-inline"></h1>
         </div>
         <div class="wrap2" style="width:99%">
-            <table style="margin-bottom:20px;background: #fff;width:100%;border:15px solid #ececec;color: #000">
-                <tr>
-                    <td width="300" style="text-align: center;vertical-align: top;padding-top:20px">
-                        <a href="https://abilita.de" target="_blank">
-                            <img src="<?php echo esc_html(plugin_dir_url(__FILE__)).'../../assets/images/01-2025/abilita_logo.png'; ?>" width="250">
-                        </a>
-                    </td>
-                    <td style="vertical-align: top;">
-                        <ul>
-                            <li style="line-height: 150%;margin-bottom:20px">
-                                <a href="<?php echo esc_html(ABILITA_PAYMENT_LINK_HOMEPAGE_INVOICE); ?>" target="_blank" class="abilitaBoxLink">
-                                    <img src="<?php echo esc_html(plugin_dir_url(__FILE__)).'../../assets/images/01-2025/coin4_RECHNUNG_Public.png'; ?>" width="90px">
-                                    <br>
-                                    <b><?php echo esc_html(__('Kauf auf Rechnung', 'abilita-payments-for-woocommerce')); ?></b>
-                                    <br>
-                                    <i>
-                                        <?php echo wp_kses(__('Bieten Sie Ihren Kunden die Möglichkeit, bequem per Rechnung zu zahlen<br>mit unserer 100% Zahlungsgarantie!', 'abilita-payments-for-woocommerce'), ABILITA_PAYMENT_ALLOWED_HTML); ?>
-                                    </i>
-                                </a>
-                            </li>
-                            <li style="line-height: 150%;margin-bottom:20px">
-                                <a href="<?php echo esc_html(ABILITA_PAYMENT_LINK_HOMEPAGE_AIIA); ?>" target="_blank" class="abilitaBoxLink">
-                                    <img src="<?php echo esc_html(plugin_dir_url(__FILE__)).'../../assets/images/01-2025/coin4_DIREKT_Public.png'; ?>" width="74px">
-                                    <br>
-                                    <b><?php echo esc_html(__('Direkt-Überweisung', 'abilita-payments-for-woocommerce')); ?></b>
-                                    <br>
-                                    <i>
-                                        <?php echo wp_kses(__('Mit der SEPA-Echtzeitüberweisung sorgen Sie für eine schnelle und sichere<br>Zahlungsabwicklung für Ihre Kunden.', 'abilita-payments-for-woocommerce'), ABILITA_PAYMENT_ALLOWED_HTML); ?>
-                                    </i>
-                                </a>
-                            </li>
-                            <li style="line-height: 150%;margin-bottom:20px">
-                                <a href="<?php echo esc_html(ABILITA_PAYMENT_LINK_HOMEPAGE_OVERVIEW); ?>" target="_blank" class="abilitaBoxLink">
-                                    <img src="<?php echo esc_html(plugin_dir_url(__FILE__)).'../../assets/images/abilita-paypal.svg'; ?>" width="80px">
-                                    <br>
-                                    <b><?php echo esc_html(__('PayPal', 'abilita-payments-for-woocommerce')); ?></b>
-                                    <br>
-                                    <i>
-                                        <?php echo wp_kses(__('Eine der beliebtesten und vertrauenswürdigsten Zahlungsarten weltweit.<br><br>', 'abilita-payments-for-woocommerce'), ABILITA_PAYMENT_ALLOWED_HTML); ?>
-                                    </i>
-                                </a>
-                            </li>
-                        </ul>
-                    </td>
-                    <td style="vertical-align: top;">
-                        <ul>
-                            <li style="line-height: 150%;margin-bottom:20px">
-                                <a href="<?php echo esc_html(ABILITA_PAYMENT_LINK_HOMEPAGE_SEPA); ?>" target="_blank" class="abilitaBoxLink">
-                                    <img src="<?php echo esc_html(plugin_dir_url(__FILE__)).'../../assets/images/01-2025/coin4_LASTSCHRIFT_Public.png'; ?>" width="90px">
-                                    <br>
-                                    <b><?php echo esc_html(__('SEPA-Lastschrift', 'abilita-payments-for-woocommerce')); ?></b>
-                                    <br>
-                                    <i>
-                                        <?php echo wp_kses(__('Ermöglichen Sie direkte Abbuchungen vom Bankkonto Ihrer Kunden<br>mit unserer 100% Zahlungsgarantie!', 'abilita-payments-for-woocommerce'), ABILITA_PAYMENT_ALLOWED_HTML); ?>
-                                    </i>
-                                </a>
-                            </li>
-                            <li style="line-height: 150%;margin-bottom:20px">
-                                <a href="<?php echo esc_html(ABILITA_PAYMENT_LINK_HOMEPAGE_ADVANCED); ?>" target="_blank" class="abilitaBoxLink">
-                                    <img src="<?php echo esc_html(plugin_dir_url(__FILE__)).'../../assets/images/01-2025/coin4_VORKASSE_Public.png'; ?>" width="90px">
-                                    <br>
-                                    <b><?php echo esc_html(__('Vorkasse', 'abilita-payments-for-woocommerce')); ?></b>
-                                    <br>
-                                    <i>
-                                        <?php echo wp_kses(__('Sicher und zuverlässig – Zahlung im Voraus für Ihre maximale<br>Sicherheit und schnellen Versand für Ihre Kunden.', 'abilita-payments-for-woocommerce'), ABILITA_PAYMENT_ALLOWED_HTML); ?>
-                                    </i>
-                                </a>
-                            </li>
-                            <li style="line-height: 150%;margin-bottom:20px">
-                                <a href="<?php echo esc_html(ABILITA_PAYMENT_LINK_HOMEPAGE_OVERVIEW); ?>" target="_blank" class="abilitaBoxLink">
-                                    <img src="<?php echo esc_html(plugin_dir_url(__FILE__)).'../../assets/images/abilita-creditcard.svg'; ?>" width="66px">
-                                    <br>
-                                    <b><?php echo esc_html(__('Kreditkarte', 'abilita-payments-for-woocommerce')); ?></b>
-                                    <br>
-                                    <i>
-                                        <?php echo wp_kses(__('Akzeptieren Sie VISA, Mastercard oder American Express und erreichen<br>Sie internationale Kunden.', 'abilita-payments-for-woocommerce'), ABILITA_PAYMENT_ALLOWED_HTML); ?>
-                                    </i>
-                                </a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
+            <a href="https://abilita.de/payment/zahlungsarten/" target="_blank">
+                <img src="<?php echo esc_html(plugin_dir_url(__FILE__)).'../../assets/images/01-2025/abilita_header_settings.png'; ?>" style="width:100%"/>
+            </a>
             <nav class="nav-tab-wrapper">
                 <a href="<?php echo esc_html(admin_url('admin.php?page=abilita_settings_page')); ?>" class="nav-tab <?php if($tab === null):?>nav-tab-active<?php endif; ?>"><?php echo esc_html(__( 'Transaktionen', 'abilita-payments-for-woocommerce'));?></a>
                 <a href="<?php echo esc_html(admin_url('admin.php?page=abilita_settings_page&tab=settingsStatus')); ?>" aria-current="page" class="nav-tab <?php if($tab === 'settingsStatus'):?>nav-tab-active<?php endif; ?>"><?php echo esc_html(__( 'Bezahlstatus', 'abilita-payments-for-woocommerce'));?></a>
