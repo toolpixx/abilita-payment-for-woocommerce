@@ -1,3 +1,4 @@
+<?php defined('ABSPATH') || exit; ?>
 <dialog id="modalReauthorize">
     <div class="modalHeader"><?php echo esc_html(__('Transaktion erneut autorisieren', 'abilita-payments-for-woocommerce')); ?></div>
     <div class="modalHeaderError" style="display:none"></div>

@@ -36,10 +36,14 @@ class WC_Abilita_Order_Addon_Status_Meta_Box
         );
     }
 
-    public function abilita_get_order_status_metabox($order)
+    public function abilita_get_order_status_metabox($orderScreen)
     {
-        $order = ($order instanceof WP_Post) ? wc_get_order($order->ID) : $order;
+        // $order = ($order instanceof WP_Post) ? wc_get_order($order->ID) : $order;
+        // Global comes from woocommerce
+        global $theorder;
 
+        // Map global to local variable
+        $order = $theorder;
         if (!$order) {
             return;
         }

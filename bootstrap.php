@@ -4,17 +4,19 @@ defined('ABSPATH') || exit;
 
 /*
 Plugin Name:          abilita PAY
+Requires Plugins:     woocommerce
 Plugin URI:           https://abilita.de/payment/zahlungsarten/
 Description:          abilita PAY - coin4 RECHNUNG, coin4 LASTSCHRIFT, coin4 DIREKT, coin4 Vorkasse, PayPal, Kreditkarte
-Author:               abilita GmbH
+Author:               abilita
 Author URI:           https://abilita.de/
 Tags:                 payment, gateway, ecommerce, e-commerce, store, sales, sell, shop, checkout, paypal, woo commerce, woocommmerce, invoice, sepa, advance, b2b, b2c
 Text Domain:          abilita-payments-for-woocommerce
 Domain Path:          /i18n/languages
 
-Version:              1.0.0
+Version:              1.0.2
 Requires at least:    6.0
-Requires PHP:         8.0.0
+Tested up to:         6.7
+Requires PHP:         8.0
 
 WC requires at least: 8.0
 WC tested up to:      8.0
@@ -28,7 +30,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 /**
  * Currently plugin version and pluginn-ame
  */
-define('WC_ABILITA_PAYMENT_VERSION', '1.0.0');
+define('WC_ABILITA_PAYMENT_VERSION', '1.0.2');
 define('WC_ABILITA_PAYMENT_NAME'   , 'abilita PAY');
 
 require_once(plugin_dir_path(__FILE__).'includes/class-wc-abilita-plugin-loader.php');

@@ -1,3 +1,4 @@
+<?php defined('ABSPATH') || exit; ?>
 <div class="wrap" style="margin: 0px;">
     <table style="width:100%;border:15px solid #ececec;background: #ececec;">
         <tr>

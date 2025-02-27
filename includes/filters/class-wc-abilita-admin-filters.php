@@ -23,8 +23,8 @@ class WC_Abilita_Admin_Filters {
         }
 
         return array_merge([
-            '<a href="'.admin_url('admin.php?page=wc-settings&tab=checkout').'">Zahlungsarten</a>',
-            '<a href="'.admin_url('admin.php?page=abilita-payments-for-woocommerce%2Fincludes%2Fadmin%2Fclass-wc-abilita-admin.php&tab=settingsApi').'">Einstellungen</a>',
+            '<a href="'.esc_html(admin_url('admin.php?page=wc-settings&tab=checkout')).'">Zahlungsarten</a>',
+            '<a href="'.esc_html(admin_url('admin.php?page=abilita_settings_page&tab=settingsApi')).'">Einstellungen</a>',
             '<a href="https://abilita.de/payment-prozess/" target="_blank">Konditionen vereinbaren</a>',
             '<a href="mailto:payment@abilita.de?subject=Hilfe zu '.$pluginInfo['Name'].' Version: '.$pluginInfo['Version'].' installiert auf '.$httpHost.'" target="_top">Kunden-Support</a>',
         ], $pluginLinks);

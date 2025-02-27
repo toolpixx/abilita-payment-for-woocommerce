@@ -1,3 +1,4 @@
+<?php defined('ABSPATH') || exit; ?>
 <dialog id="modalRefund">
     <div class="modalHeader"><?php echo esc_html(__('Transaktion Rückerstatten', 'abilita-payments-for-woocommerce')); ?></div>
     <div class="modalHeaderError" style="display:none"></div>

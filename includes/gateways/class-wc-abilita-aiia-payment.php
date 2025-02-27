@@ -45,14 +45,14 @@ class WC_Abilita_Aiia_Payment extends WC_Abilita_Base_Payment
         $this->abilitaFormService    = new WC_Abilita_Form_Service();
         $this->id                    = 'abilita-aiia';
         $this->abilita_payment_name  = 'aiia';
-        $this->icon                  = plugin_dir_url(false).'abilita-payments-for-woocommerce/assets/images/01-2025/'.$this->id.'.png';
+        $this->icon                  = plugin_dir_url(false).'abilita-payments-for-woocommerce/assets/images/'.$this->id.'.png';
         $this->has_fields             = true;
         $this->method_title          = __('abilita PAY (Coin4Direkt)', 'abilita-payments-for-woocommerce');
         $this->method_description    = __('Mit der SEPA Direkt-Überweisung können Sie den Betrag sofort und sicher an uns überweisen, sodass wir Ihre Bestellung umgehend bearbeiten können.', 'abilita-payments-for-woocommerce');
         $this->abilita_pay_box_link  = ABILITA_PAYMENT_LINK_HOMEPAGE_AIIA;
         $this->abilita_pay_box_title = __('Direkt-Überweisung', 'abilita-payments-for-woocommerce');
         $this->abilita_pay_box_text  = __('Mit der SEPA-Echtzeitüberweisung sorgen Sie für eine schnelle und sichere Zahlungsabwicklung für Ihre Kunden.', 'abilita-payments-for-woocommerce');
-        $this->abilita_pay_box_image = plugin_dir_url(false).'abilita-payments-for-woocommerce/assets/images/01-2025/coin4_DIREKT_Public.png';
+        $this->abilita_pay_box_image = plugin_dir_url(false).'abilita-payments-for-woocommerce/assets/images/coin4_direkt.png';
 
         $this->init_form_fields();
         $this->init_settings();

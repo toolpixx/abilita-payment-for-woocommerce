@@ -50,14 +50,14 @@ class WC_Abilita_Sepa_Payment extends WC_Abilita_Base_Payment
         $this->abilitaFormService    = new WC_Abilita_Form_Service();
         $this->id                    = 'abilita-sepa';
         $this->abilita_payment_name  = 'dd';
-        $this->icon                  = plugin_dir_url(false).'abilita-payments-for-woocommerce/assets/images/01-2025/'.$this->id.'.png';
+        $this->icon                  = plugin_dir_url(false).'abilita-payments-for-woocommerce/assets/images/'.$this->id.'.png';
         $this->has_fields             = true;
         $this->method_title          = __('abilita PAY (Coin4Lastschrift)', 'abilita-payments-for-woocommerce');
         $this->method_description    = __('Bezahlen Sie Ihren Einkauf bequem und sicher per Bankeinzug. Für diese Zahlungsart benötigen wir Ihr Geburtsdatum.', 'abilita-payments-for-woocommerce');
         $this->abilita_pay_box_link  = ABILITA_PAYMENT_LINK_HOMEPAGE_SEPA;
         $this->abilita_pay_box_title = __('SEPA-Lastschrift', 'abilita-payments-for-woocommerce');
         $this->abilita_pay_box_text  = __('Ermöglichen Sie direkte Abbuchungen vom Bankkonto Ihrer Kunden mit unserer <b>100% Zahlungsgarantie!</b>', 'abilita-payments-for-woocommerce');
-        $this->abilita_pay_box_image = plugin_dir_url(false).'abilita-payments-for-woocommerce/assets/images/01-2025/coin4_LASTSCHRIFT_Public.png';
+        $this->abilita_pay_box_image = plugin_dir_url(false).'abilita-payments-for-woocommerce/assets/images/coin4_lastschrift.png';
 
         $this->init_form_fields();
         $this->init_settings();
@@ -299,8 +299,8 @@ class WC_Abilita_Sepa_Payment extends WC_Abilita_Base_Payment
 		// $_POST comes from progress checkout with woocommerce-process-checkout-nonce
         // phpcs:ignore WordPress.Security.NonceVerification.Missing
         if (
-            isset($_POST['billing_company']) && empty($_POST['billing_company'])       &&
-            isset($_POST['billing_vat_id'])  && empty($_POST['billing_vat_id'])
+            (!isset($_POST['billing_company']) || empty($_POST['billing_company'])) &&
+            (!isset($_POST['billing_vat_id']) || empty($_POST['billing_vat_id']))
         ) {
             echo wp_kses($this->abilitaFormService->get_payment_birthday_fields($this->id), ABILITA_PAYMENT_ALLOWED_HTML);
         }

@@ -210,7 +210,7 @@ class WC_Abilita_Base_Payment extends WC_Payment_Gateway
                 WC()->session->get('BLOCKED_COUNT_'.$this->id, 0) >= $this->blockedCount &&
                 !$this->is_advance_payment()
             ) {
-                //return false;
+                return false;
             }
         }
 
@@ -348,7 +348,7 @@ class WC_Abilita_Base_Payment extends WC_Payment_Gateway
         // phpcs:ignore WordPress.Security.NonceVerification.Missing
         if (
             empty($this->order->get_billing_company()) &&
-            (isset($_POST['billing_vat_id']) && empty($_POST['billing_vat_id']))
+            (!isset($_POST['billing_vat_id']) || empty($_POST['billing_vat_id']))
         ) {
             $this->get_birthday_data();
             $this->get_risk_check_approval();
@@ -546,7 +546,7 @@ class WC_Abilita_Base_Payment extends WC_Payment_Gateway
         // phpcs:ignore WordPress.Security.NonceVerification.Missing
         if (
             empty($this->order->get_billing_company()) &&
-            (isset($_POST['billing_vat_id']) && empty($_POST['billing_vat_id']))
+            (!isset($_POST['billing_vat_id']) || empty($_POST['billing_vat_id']))
         ) {
 			// $_POST comes from progress checkout with woocommerce-process-checkout-nonce
         	// phpcs:ignore WordPress.Security.NonceVerification.Missing

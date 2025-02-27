@@ -1,3 +1,4 @@
+<?php defined('ABSPATH') || exit; ?>
 <form method="post" action="<?php echo esc_html(admin_url('admin.php?page=abilita_settings_page&tab=settingsOther')); ?>">
     <?php wp_nonce_field( 'abilita_nonce_action', 'abilita_nonce_settings_other' ); ?>
     <?php settings_fields($this->abilitaSettingsGroup); ?>

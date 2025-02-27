@@ -288,7 +288,7 @@ class WC_Abilita_Abilita_Admin {
             ],
             '3' => [
                 'name' => 'completed',
-                'text' => esc_html(__('Completed', 'abilita-payments-for-woocommerce')),
+                'text' => esc_html(__('Abgeschlossen', 'abilita-payments-for-woocommerce')),
                 'info' => wp_kses(__('Bezahlstatus bei einer abgeschlossenen Transaktion', 'abilita-payments-for-woocommerce'), ABILITA_PAYMENT_ALLOWED_HTML)
             ],
             '4' => [
