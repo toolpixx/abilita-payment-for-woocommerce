@@ -213,7 +213,7 @@ class WC_Abilita_Abilita_Admin {
         </div>
         <div class="wrap2" style="width:99%">
             <a href="https://abilita.de/payment/zahlungsarten/" target="_blank">
-                <img src="<?php echo esc_html(plugin_dir_url(__FILE__)).'../../assets/images/01-2025/abilita_header_settings.png'; ?>" style="width:100%"/>
+                <img src="<?php echo esc_html(plugin_dir_url(__FILE__)).'../../assets/images/abilita_header_settings.png'; ?>" style="width:100%"/>
             </a>
             <nav class="nav-tab-wrapper">
                 <a href="<?php echo esc_html(admin_url('admin.php?page=abilita_settings_page')); ?>" class="nav-tab <?php if($tab === null):?>nav-tab-active<?php endif; ?>"><?php echo esc_html(__( 'Transaktionen', 'abilita-payments-for-woocommerce'));?></a>

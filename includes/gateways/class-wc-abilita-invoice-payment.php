@@ -322,7 +322,6 @@ class WC_Abilita_Invoice_Payment extends WC_Abilita_Base_Payment
             $instructions = str_replace('{total}', $order->get_formatted_order_total(), $instructions);
             $instructions = str_replace('{date}', $order->get_date_created()->date('d.m.Y'), $instructions);
             $instructions = str_replace('{ordernumber}', $this->ordernumberPrefix.$order->get_order_number(), $instructions);
-            $instructions = str_replace('{company}', get_option('ABILITA_SEPA_ACCOUNT_HOLDER'), $instructions);
 
             $bodyHtml = '<section class="woocommerce-customer-details">';
             $bodyHtml .= '<section class="woocommerce-columns woocommerce-columns--2 woocommerce-columns--addresses col2-set addresses">';

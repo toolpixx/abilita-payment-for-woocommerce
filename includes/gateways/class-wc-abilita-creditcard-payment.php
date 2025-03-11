@@ -132,7 +132,7 @@ class WC_Abilita_CreditCard_Payment extends WC_Abilita_Base_Payment
 
     public function validate_fields()
     {
-        $formValidateTitle   = $this->abilitaFormService->validate_Title();
+        $formValidateTitle   = $this->abilitaFormService->validate_title();
 
         // $_POST will validate in $this->abilitaFormService->validate_different_delivery_address
         // phpcs:ignore WordPress.Security.NonceVerification.Missing

@@ -13,7 +13,7 @@ Tags:                 payment, gateway, ecommerce, e-commerce, store, sales, sel
 Text Domain:          abilita-payments-for-woocommerce
 Domain Path:          /i18n/languages
 
-Version:              1.0.2
+Version:              1.0.4
 Requires at least:    6.0
 Tested up to:         6.7
 Requires PHP:         8.0

@@ -325,8 +325,9 @@ class WC_Abilita_Sepa_Payment extends WC_Abilita_Base_Payment
 					echo sprintf(
 						/* translators: %1$s: Owner of sepa-account */
 						/* translators: %2$s: Owner of sepa-account */
-						esc_html(__('Ich ermächtige %1$s Zahlungen von meinem Konto mittels Lastschrift einzuziehen. Zugleich weise ich mein Kreditinstitut an, die von %2$s auf mein Konto gezogenen Lastschriften einzulösen.', 'abilita-payments-for-woocommerce')), 																		esc_html(get_option('ABILITA_SEPA_ACCOUNT_HOLDER')),
-						esc_html(get_option('ABILITA_SEPA_ACCOUNT_HOLDER'))
+						esc_html(__('Ich ermächtige %1$s Zahlungen von meinem Konto mittels Lastschrift einzuziehen. Zugleich weise ich mein Kreditinstitut an, die von %2$s auf mein Konto gezogenen Lastschriften einzulösen.', 'abilita-payments-for-woocommerce')),
+                        $this->bankAccountHolder,
+                        $this->bankAccountHolder
 					);
                 ?>
             </p>
@@ -347,7 +348,7 @@ class WC_Abilita_Sepa_Payment extends WC_Abilita_Base_Payment
 
     public function validate_fields()
     {
-        $formValidateTitle             = $this->abilitaFormService->validate_Title();
+        $formValidateTitle             = $this->abilitaFormService->validate_title();
         $formValidatePhone             = $this->abilitaFormService->validate_phone($this->allowPhonenumber);
         $formValidateSepaAccountHolder = $this->abilitaFormService->validate_sepa_account_holder();
         $formValidateSepaIban          = $this->abilitaFormService->validate_iban();
@@ -509,7 +510,6 @@ class WC_Abilita_Sepa_Payment extends WC_Abilita_Base_Payment
         $instructions = str_replace('{total}', $order->get_formatted_order_total(), $instructions);
         $instructions = str_replace('{date}', $order->get_date_created()->date('d.m.Y'), $instructions);
         $instructions = str_replace('{ordernumber}', $this->ordernumberPrefix.$order->get_order_number(), $instructions);
-        $instructions = str_replace('{company}', get_option('ABILITA_SEPA_ACCOUNT_HOLDER'), $instructions);
         $instructions = str_replace('{bankdata}', $bankDataHtml, $instructions);
 
         $bodyHtml = '<section class="woocommerce-customer-details">';
