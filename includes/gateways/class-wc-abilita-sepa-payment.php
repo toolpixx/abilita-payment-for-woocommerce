@@ -326,8 +326,8 @@ class WC_Abilita_Sepa_Payment extends WC_Abilita_Base_Payment
 						/* translators: %1$s: Owner of sepa-account */
 						/* translators: %2$s: Owner of sepa-account */
 						esc_html(__('Ich ermächtige %1$s Zahlungen von meinem Konto mittels Lastschrift einzuziehen. Zugleich weise ich mein Kreditinstitut an, die von %2$s auf mein Konto gezogenen Lastschriften einzulösen.', 'abilita-payments-for-woocommerce')),
-                        $this->bankAccountHolder,
-                        $this->bankAccountHolder
+                        $this->sepaBankAccountHolder,
+                        $this->sepaBankAccountHolder
 					);
                 ?>
             </p>
