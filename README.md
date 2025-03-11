@@ -18,10 +18,10 @@ Unsere Installationsanleitung ist umgezogen und befindet sich ab sofort unter fo
 * If customer set no vat-id in the plugin-preferences and the customer is no b2b-customer the birthday-fields will not show.
 * Abilita-Metabox in the order-detail-view will occured an error (With WooCommerce: Version 8.1.1|9.3.3)
 
-= 1.0.3 = *(27.02.2025)*
+1.0.3 *(27.02.2025)*
 
 * validate_Title must validate_title
 
-= 1.0.4 = *(11.03.2025)*
+1.0.4 *(11.03.2025)*
 
 * Remove ABILITA_BANK_ACCOUNT_HOLDER from source an use $this->bankAccountHolder
