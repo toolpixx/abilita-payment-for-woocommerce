@@ -48,6 +48,7 @@ Ja über abilita kannst Du auch direkt das Inkasso durchführen
 
 * Remove ABILITA_BANK_ACCOUNT_HOLDER from source an use $this->bankAccountHolder
 
+
 == Screenshots ==
 
 1. Frontend Screenshot
