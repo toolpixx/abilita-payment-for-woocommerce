@@ -188,7 +188,6 @@ class WC_Abilita_Advance_Payment extends WC_Abilita_Base_Payment
     public function validate_fields()
     {
         $formValidateTitle   = $this->abilitaFormService->validate_title();
-
         if (!$formValidateTitle) {
             return;
         }
