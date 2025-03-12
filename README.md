@@ -2,7 +2,8 @@
 Unsere Installationsanleitung ist umgezogen und befindet sich ab sofort unter folgenden Link:
 <br><br>
 🚀️ https://symfonian.de/abilita-payments-for-woocommerce/
-
+<br><br>
+🚀️ Bitte nutzen Sie für die Installation nur den Download welcher auf der Installationsanleitung hinterlegt ist.
 <h2>Changelog</h2>
 
 1.0.0 *(10.02.2025)*
