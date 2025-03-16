@@ -13,7 +13,7 @@ Tags:                 payment, gateway, ecommerce, e-commerce, store, sales, sel
 Text Domain:          abilita-payments-for-woocommerce
 Domain Path:          /i18n/languages
 
-Version:              1.0.4
+Version:              1.0.5
 Requires at least:    6.0
 Tested up to:         6.7
 Requires PHP:         8.0
@@ -30,8 +30,11 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 /**
  * Currently plugin version and pluginn-ame
  */
-define('WC_ABILITA_PAYMENT_VERSION', '1.0.2');
+define('WC_ABILITA_PAYMENT_VERSION', '1.0.5');
 define('WC_ABILITA_PAYMENT_NAME'   , 'abilita PAY');
+
+require_once(plugin_dir_path(__FILE__).'includes/class-wc-abilita-plugin-updater.php');
+$pluginUpdater = new abilita\payment\WC_Abilita_Plugin_Updater();
 
 require_once(plugin_dir_path(__FILE__).'includes/class-wc-abilita-plugin-loader.php');
 $plugin = new abilita\payment\WC_Abilita_Plugin_Loader();

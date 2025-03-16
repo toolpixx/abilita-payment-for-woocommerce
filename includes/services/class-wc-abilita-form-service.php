@@ -130,43 +130,35 @@ class WC_Abilita_Form_Service
     public function get_salutation()
     {
         $billingSalutationKey = $this->map_salutation();
-        $salutation = isset($_POST[$billingSalutationKey]) ? sanitize_text_field(wp_unslash($_POST[$billingSalutationKey])) : null;
-        return !empty($salutation) ? $salutation : 'd';
-    }
+        if (isset($_POST[$billingSalutationKey]) && !empty(get_option('ABILITA_FORM_FIELD_OWN_SALUTATION_NAME'))) {
+            $salutationMapping = array_flip(array_map('strtolower', ABILITA_SALUTATIONS));
+            $salutation = $salutationMapping[sanitize_text_field(wp_unslash($_POST[$billingSalutationKey]))];
+        } else {
+            $salutation = sanitize_text_field(wp_unslash($_POST[$billingSalutationKey]));
+        }
 
-    public function get_vat_number()
-    {
-        $billingVatIdKey = $this->map_vat_number();
-        $vatNumber = isset($_POST[$billingVatIdKey]) ? sanitize_text_field(wp_unslash($_POST[$billingVatIdKey])) : null;
-        return !empty($vatNumber) ? $vatNumber : '';
+        return !empty($salutation) ? $salutation : 'd';
     }
 
     public function map_salutation()
     {
         $ABILITA_FORM_FIELD_OWN_SALUTATION_NAME = get_option('ABILITA_FORM_FIELD_OWN_SALUTATION_NAME');
-        if (!empty($ABILITA_FORM_FIELD_OWN_SALUTATION_NAME)) {
+        $ABILITA_FORM_FIELD_SALUTATION          = get_option('ABILITA_FORM_FIELD_SALUTATION');
+        if (empty($ABILITA_FORM_FIELD_SALUTATION) && !empty($ABILITA_FORM_FIELD_OWN_SALUTATION_NAME)) {
             return $ABILITA_FORM_FIELD_OWN_SALUTATION_NAME;
         }
 
         return 'billing_title';
     }
 
-    public function map_vat_number()
-    {
-        $ABILITA_FORM_FIELD_OWN_VAT_ID_NAME = get_option('ABILITA_FORM_FIELD_OWN_VAT_ID_NAME');
-        if (!empty($ABILITA_FORM_FIELD_OWN_VAT_ID_NAME)) {
-            return $ABILITA_FORM_FIELD_OWN_VAT_ID_NAME;
-        }
-
-        return 'billing_vat_id';
-    }
-
     public function validate_title()
     {
         $billingSalutationKey = $this->map_salutation();
+        $salutation = $this->get_salutation();
 
-		if (!isset($_POST[$billingSalutationKey])) {
-			wc_add_notice(
+        WC()->session->set('billing_title', null);
+        if (!isset($_POST[$billingSalutationKey])) {
+            wc_add_notice(
                 __('Bitte wählen Sie eine Anrede aus', 'abilita-payments-for-woocommerce'),
                 'error'
             );
@@ -177,7 +169,7 @@ class WC_Abilita_Form_Service
                 'error'
             );
             return false;
-        } else if (isset($_POST[$billingSalutationKey]) && !in_array($_POST[$billingSalutationKey], ['m', 'f', 'd'])) {
+        } else if (isset($_POST[$billingSalutationKey]) && !in_array($salutation, ['m', 'f', 'd'])) {
             wc_add_notice(
                 __('Bitte wählen Sie eine Anrede aus', 'abilita-payments-for-woocommerce'),
                 'error'
@@ -185,10 +177,25 @@ class WC_Abilita_Form_Service
             return false;
         }
 
-        $billing_title = isset($_POST[$billingSalutationKey]) ? sanitize_text_field(wp_unslash($_POST[$billingSalutationKey])) : null;
-        WC()->session->set('billing_title', $billing_title);
-
+        WC()->session->set('billing_title', $salutation);
         return true;
+    }
+
+    public function get_vat_number()
+    {
+        $billingVatIdKey = $this->map_vat_number();
+        $vatNumber = isset($_POST[$billingVatIdKey]) ? sanitize_text_field(wp_unslash($_POST[$billingVatIdKey])) : null;
+        return !empty($vatNumber) ? $vatNumber : '';
+    }
+
+    public function map_vat_number()
+    {
+        $ABILITA_FORM_FIELD_OWN_VAT_ID_NAME = get_option('ABILITA_FORM_FIELD_OWN_VAT_ID_NAME');
+        if (!empty($ABILITA_FORM_FIELD_OWN_VAT_ID_NAME)) {
+            return $ABILITA_FORM_FIELD_OWN_VAT_ID_NAME;
+        }
+
+        return 'billing_vat_id';
     }
 
     public function validate_phone($allowPhonenumber)

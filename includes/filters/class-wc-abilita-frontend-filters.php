@@ -8,7 +8,7 @@ class WC_Abilita_Frontend_Filters {
 
     public function __construct()
     {
-        add_filter('woocommerce_checkout_fields'              , [$this, 'abilita_add_checkout_fields']);
+        add_filter('woocommerce_checkout_fields'              , [$this, 'abilita_add_checkout_fields'], 20);
         add_filter('woocommerce_my_account_my_orders_actions', [$this, 'abilita_remove_pay_button_my_account'], 10, 2);
     }
 

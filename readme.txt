@@ -48,6 +48,10 @@ Ja über abilita kannst Du auch direkt das Inkasso durchführen
 
 * Remove ABILITA_BANK_ACCOUNT_HOLDER from source an use $this->bankAccountHolder
 
+= 1.0.5 = *(16.03.2025)*
+
+* Repair title mapping, because abilita PAY has not the highest priority
+* Add own plugin-updater
 
 == Screenshots ==
 

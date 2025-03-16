@@ -18,7 +18,7 @@
                 <b><?php echo esc_html(__('Anrede', 'abilita-payments-for-woocommerce')); ?></b>
                 <br>
                 <small class="info">
-                    <?php echo esc_html(__('Sie können dieses Feld aktivieren, falls Sie es noch nicht auf andere Weise konfiguriert haben.', 'abilita-payments-for-woocommerce')); ?>
+                    <?php echo esc_html(__('Sie können dieses Feld aktivieren, falls Sie es noch nicht auf andere Weise konfiguriert haben. Wenn Sie diese Option aktivieren, lassen Sie das Feld "Eigenes Feld (Mapping)" bitte leer, da diese Option stets höher priorisiert wird..', 'abilita-payments-for-woocommerce')); ?>
                 </small>
             </td>
             <td valign="top">
@@ -30,7 +30,7 @@
                 <b><?php echo esc_html(__('Eigenes Feld (Mapping)', 'abilita-payments-for-woocommerce')); ?></b>
                 <br>
                 <small class="info">
-                    <?php echo esc_html(__('Wenn Sie bereits ein eigenes Feld für die Anrede definiert und aktiviert haben, so geben Sie hier an wie das Feld heisst. z.B. "billing_salutation".', 'abilita-payments-for-woocommerce')); ?>
+                    <?php echo esc_html(__('Wenn Sie bereits ein eigenes Feld für die Anrede definiert und aktiviert haben, so geben Sie hier an wie das Feld heisst. z.B. "billing_salutation". Deaktivieren Sie in diesem Fall die vorherige Option "Anrede".', 'abilita-payments-for-woocommerce')); ?>
                 </small>
             </td>
             <td valign="top">

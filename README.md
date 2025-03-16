@@ -26,3 +26,8 @@ Unsere Installationsanleitung ist umgezogen und befindet sich ab sofort unter fo
 1.0.4 *(11.03.2025)*
 
 * Remove ABILITA_BANK_ACCOUNT_HOLDER from source an use $this->bankAccountHolder
+
+1.0.5 *(16.03.2025)*
+
+* Repair title mapping, because abilita PAY has not the highest priority
+* Add own plugin-updater
