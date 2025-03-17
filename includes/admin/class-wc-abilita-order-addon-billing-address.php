@@ -15,15 +15,10 @@ class WC_Abilita_Order_Addon_Billing_Address {
     public function abilita_order_formatted_billing_address($billingAddress, $order)
     {
         $order = wc_get_order($order->get_id());
-        if (!get_option('ABILITA_FORM_FIELD_SALUTATION')) {
-            $salutationName = get_option('ABILITA_FORM_FIELD_OWN_SALUTATION_NAME');
-            if (!empty($salutationName)) {
-                $salutation = $order->get_meta($salutationName);
-            } else {
-                $salutation = $order->get_meta('ABILITA_CUSTOMER_SALUTATION');
-            }
-        } else {
+        if (get_option('woocommerce_custom_orders_table_enabled') == 'yes') {
             $salutation = $order->get_meta('ABILITA_CUSTOMER_SALUTATION');
+        } else {
+            $salutation = get_post_meta($order->get_id(), 'ABILITA_CUSTOMER_SALUTATION', true);
         }
 
         if (isset(ABILITA_SALUTATIONS[$salutation])) {
@@ -37,34 +32,16 @@ class WC_Abilita_Order_Addon_Billing_Address {
     {
         if (get_option('woocommerce_custom_orders_table_enabled') == 'yes') {
             $vatNumber = $order->get_meta('ABILITA_CUSTOMER_VAT_ID');
-            if (!get_option('ABILITA_FORM_FIELD_SALUTATION')) {
-                $billingBirthdayName = get_option('ABILITA_FORM_FIELD_OWN_SALUTATION_NAME');
-                if (!empty($billingBirthdayName)) {
-                    $birthday = $order->get_meta($billingBirthdayName);
-                } else {
-                    $birthday = $order->get_meta('ABILITA_CUSTOMER_BIRTHDAY');
-                }
-            } else {
-                $birthday = $order->get_meta('ABILITA_CUSTOMER_BIRTHDAY');
-            }
+            $birthday  = $order->get_meta('ABILITA_CUSTOMER_BIRTHDAY');
         } else {
-            $vatNumber = $order->get_meta('ABILITA_CUSTOMER_VAT_ID');
-            if (!get_option('ABILITA_FORM_FIELD_SALUTATION')) {
-                $billingBirthdayName = get_option('ABILITA_FORM_FIELD_OWN_SALUTATION_NAME');
-                if (!empty($billingBirthdayName)) {
-                    $birthday = get_post_meta($order->get_id(), $billingBirthdayName, true);
-                } else {
-                    $birthday = get_post_meta($order->get_id(), 'ABILITA_CUSTOMER_BIRTHDAY', true);
-                }
-            } else {
-                $birthday = get_post_meta($order->get_id(), 'ABILITA_CUSTOMER_BIRTHDAY', true);
-            }
+            $vatNumber = get_post_meta($order->get_id(), 'ABILITA_CUSTOMER_VAT_ID', true);
+            $birthday  = get_post_meta($order->get_id(), 'ABILITA_CUSTOMER_BIRTHDAY', true);
         }
 
         if (!empty($birthday)) {
             echo sprintf(
                 wp_kses(
-                    /* translators: %s: Birthday of buyer */
+                /* translators: %s: Birthday of buyer */
                     __('<b>Geburtsdatum:</b><br> %s', 'abilita-payments-for-woocommerce'),
                     [
                         'b' => true,
